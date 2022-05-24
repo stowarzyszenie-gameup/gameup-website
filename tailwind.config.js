@@ -4,7 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "linear-gradient(180deg,rgba(103,141,37,.56) 0%,#000 100%), url('/hero.jpeg')",
+      },
+    },
   },
   plugins: [],
 };
