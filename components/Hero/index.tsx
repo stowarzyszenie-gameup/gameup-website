@@ -5,7 +5,7 @@ import { P } from "../TextElements/paragraph";
 
 const Hero = () => {
   return (
-    <div className="min-h-60 sm:min-h-96 xl:min-h-[50vh] bg-hero bg-cover bg-center w-full px-5 py-20 flex flex-col gap-4 items-center">
+    <div className="min-h-60 sm:min-h-96 xl:min-h-[50vh] bg-hero bg-cover bg-center w-full px-5 py-20 flex flex-col gap-4 items-center justify-around">
       <H3 light={true}>Stowarzyszenie GameUp</H3>
       <H1 light={true}>
         WANT TO PLAY?
