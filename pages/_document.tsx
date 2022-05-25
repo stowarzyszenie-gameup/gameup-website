@@ -6,7 +6,7 @@ class GameUpDocument extends Document {
       <Html lang="pl">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700&display=optional"
+            href="https://fonts.googleapis.com/css?family=Cabin|Roboto:100,300,400,700&display=optional"
             rel="stylesheet"
           />
         </Head>

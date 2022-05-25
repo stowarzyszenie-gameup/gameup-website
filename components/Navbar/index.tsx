@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav className="flex flex-col sm:flex-row sm:justify-between p-6">
+    <nav className="flex flex-col sm:flex-row sm:justify-between px-12 py-6">
       <div className="flex flex-row justify-between">
         <div>
           <Link href="/">
@@ -23,7 +23,10 @@ const Navbar = () => {
           H
         </button>
       </div>
-      <ul id="desktop-menu" className="hidden sm:flex flex-row list-none gap-4">
+      <ul
+        id="desktop-menu"
+        className="hidden sm:flex flex-row list-none gap-4 items-center font-secondary"
+      >
         <li>
           <Link href="/#about" scroll={false}>
             <a>O nas</a>
@@ -37,9 +40,13 @@ const Navbar = () => {
         id="mobile-menu"
         className={`${
           showMenu ? "flex" : "hidden"
-        } sm:hidden flex-col list-none gap-4 items-center`}
+        } sm:hidden flex-col list-none gap-4 items-center font-secondary pt-4`}
       >
-        <li>O nas</li>
+        <li>
+          <Link href="/#about" scroll={false}>
+            <a>O nas</a>
+          </Link>
+        </li>
         <li>Warsztaty</li>
         <li>Zespół</li>
         <li>Kontakt</li>

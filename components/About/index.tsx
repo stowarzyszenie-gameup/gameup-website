@@ -1,11 +1,12 @@
 import React from "react";
+import { H2, H3 } from "../TextElements/headers";
 
 const About = () => {
   return (
-    <div id="about">
-      <h3>CZYM SIĘ ZAJMUJEMY?</h3>
-      <h2>PRACUJEMY NAD ROZWOJEM BRANŻY GIER</h2>
-      <ul>
+    <div id="about" className="py-8 px-10 bg-slate-100">
+      <H3>CZYM SIĘ ZAJMUJEMY?</H3>
+      <H2>PRACUJEMY NAD ROZWOJEM BRANŻY GIER</H2>
+      <ul className="grid grid-cols-1 sm:grid-cols-3">
         <li>
           <h5>WSPIERAMY</h5>
           <p>
