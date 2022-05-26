@@ -10,7 +10,7 @@ export const H1 = ({ children, light }: IProps) => {
     <h1
       className={`text-center ${
         light ? "text-white" : "text-black"
-      } font-primary font-extralight text-7xl uppercase tracking-wide`}
+      } font-primary font-extralight text-5xl sm:text-7xl uppercase tracking-wide`}
     >
       {children}
     </h1>
@@ -22,7 +22,7 @@ export const H2 = ({ children, light }: IProps) => {
     <h2
       className={`text-center ${
         light ? "text-white" : "text-black"
-      } font-primary font-extralight text-5xl uppercase tracking-wide my-4`}
+      } font-primary font-extralight text-4xl sm:text-5xl uppercase tracking-wide my-4`}
     >
       {children}
     </h2>
@@ -38,5 +38,17 @@ export const H3 = ({ children, light }: IProps) => {
     >
       {children}
     </h3>
+  );
+};
+
+export const H4 = ({ children, light }: IProps) => {
+  return (
+    <h4
+      className={`text-center ${
+        light ? "text-white" : "text-black"
+      } font-primary text-2xl font-bold uppercase tracking-wide my-4`}
+    >
+      {children}
+    </h4>
   );
 };

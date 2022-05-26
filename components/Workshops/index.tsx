@@ -20,7 +20,7 @@ const Workshops = () => {
         swojej gry oraz kilka pierwszych stron scenariusza, które mogą stać się
         elementem portfolio.
       </P>
-      <Button text="Dowiedz się więcej" />
+      <Button text="Dowiedz się więcej" href="" />
     </div>
   );
 };
