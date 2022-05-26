@@ -6,7 +6,7 @@ class GameUpDocument extends Document {
       <Html lang="pl" className="scroll-smooth">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Cabin|Roboto:100,300,400,700&display=optional"
+            href="https://fonts.googleapis.com/css?family=Cabin|Roboto:100,300,400,700&display=swap"
             rel="stylesheet"
           />
         </Head>
