@@ -69,6 +69,7 @@ const Navbar = () => {
           <li
             key={`navbar-mobile-${index}`}
             className="transition-all duration-100 hover:font-bold"
+            onClick={() => setShowMenu(false)}
           >
             <Link href={link.href} scroll={false}>
               <a className="py-2">{link.text}</a>
