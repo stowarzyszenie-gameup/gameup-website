@@ -7,7 +7,10 @@ import photo from "./workshop_hero.webp";
 
 const Workshops = () => {
   return (
-    <div className="py-8 px-10 bg-white flex justify-center items-center">
+    <div
+      className="py-8 px-10 bg-white flex justify-center items-center"
+      id="workshops"
+    >
       <div className=" max-w-screen-xl flex flex-col gap-4 items-center justify-around">
         <H3>Warsztaty</H3>
         <H2>WARSZTATY PISANIA SCENARIUSZY GIER</H2>

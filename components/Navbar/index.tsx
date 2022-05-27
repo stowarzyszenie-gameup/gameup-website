@@ -10,15 +10,15 @@ const navbarLinks = [
     text: "O nas",
   },
   {
-    href: "#",
+    href: "/#workshops",
     text: "Warsztaty",
   },
   {
-    href: "#",
+    href: "/#team",
     text: "Zespół",
   },
   {
-    href: "#",
+    href: "/#contact",
     text: "Kontakt",
   },
 ];

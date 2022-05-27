@@ -49,7 +49,10 @@ const teamMembersData = [
 
 const Team = () => {
   return (
-    <div className="py-8 px-10 bg-lime-500 flex justify-center items-center">
+    <div
+      className="py-8 px-10 bg-lime-500 flex justify-center items-center"
+      id="team"
+    >
       <div className=" max-w-screen-xl flex flex-col gap-4 items-center justify-around">
         <H3>Zespół</H3>
         <H2>NASI EKSPERCI</H2>
