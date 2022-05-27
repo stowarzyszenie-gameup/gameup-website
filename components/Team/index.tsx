@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { H2, H3, H4 } from "../TextElements/headers";
+import { P } from "../TextElements/paragraph";
 import {
   adamPhoto,
   kacperPhoto,
@@ -8,6 +9,7 @@ import {
   rozaPhoto,
   szymonMakuchPhoto,
   szymonStoczekPhoto,
+  prawnikPhoto,
 } from "./images";
 
 import TeamCard from "./TeamCard";
@@ -61,17 +63,27 @@ const Team = () => {
             />
           ))}
         </ul>
-        <div>
-          USŁUGI PRAWNICZE Radca prawny, członek Okręgowej Izby Radców Prawnych
-          we Wrocławiu, absolwent Uniwersytetu Wrocławskiego na kierunkach prawo
-          i administracja. Doświadczenie zdobywał w renomowanych kancelariach
-          prawnych działających we Wrocławiu. Współpracuje z podmiotami z branży
-          rozrywkowej i usługowej, prowadząc obsługę prawną tych
-          przedsiębiorstw. W swojej pracy zawodowej styka się z między innymi z
-          umowami IT, zagadnieniami prawa autorskiego, prawa własności
-          intelektualnej, opodatkowania twórców. Prywatnie oldschoolowiec, nadal
-          zdarza mu się grać w Wolfensteina 3D, ma wciąż zainstalowanego
-          Medievala II oraz GTA:San Andreas.
+        <div className="grid grid-cols-1 lg:grid-cols-3 w-full h-full rounded overflow-hidden shadow-lg bg-white my-2 px-6 py-4 gap-8">
+          <img
+            src={prawnikPhoto.src}
+            alt=""
+            className="rounded-full w-3/5 sm:w-2/5 lg:w-full m-auto"
+          />
+          <div className="lg:col-start-2 lg:col-end-4">
+            <H4>USŁUGI PRAWNICZE</H4>
+            <P>
+              Radca prawny, członek Okręgowej Izby Radców Prawnych we Wrocławiu,
+              absolwent Uniwersytetu Wrocławskiego na kierunkach prawo i
+              administracja. Doświadczenie zdobywał w renomowanych kancelariach
+              prawnych działających we Wrocławiu. Współpracuje z podmiotami z
+              branży rozrywkowej i usługowej, prowadząc obsługę prawną tych
+              przedsiębiorstw. W swojej pracy zawodowej styka się z między
+              innymi z umowami IT, zagadnieniami prawa autorskiego, prawa
+              własności intelektualnej, opodatkowania twórców. Prywatnie
+              oldschoolowiec, nadal zdarza mu się grać w Wolfensteina 3D, ma
+              wciąż zainstalowanego Medievala II oraz GTA:San Andreas.
+            </P>
+          </div>
         </div>
       </div>
     </div>
