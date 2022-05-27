@@ -11,7 +11,7 @@ export const P = ({ children, light, centered }: IProps) => {
     <p
       className={`${centered ? "text-center" : "text-left"} ${
         light ? "text-white" : "text-black"
-      } font-secondary text-lg sm:text-xl tracking-wide leading-8`}
+      } font-secondary text-lg md:text-xl tracking-wide leading-8 my-4`}
     >
       {children}
     </p>
