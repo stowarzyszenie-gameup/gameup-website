@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
@@ -6,7 +5,6 @@ import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Team from "../components/Team";
 import Workshops from "../components/Workshops";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
