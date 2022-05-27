@@ -26,57 +26,63 @@ const navbarLinks = [
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav className="flex flex-col sm:flex-row sm:justify-between px-12 py-6">
-      <div className="flex flex-row justify-between">
-        <div>
-          <Link href="/">
-            <a>
-              <img src="/gameup_logo.webp" alt="GameUP logo" className="w-36" />
-            </a>
-          </Link>
+    <nav className="bg-white flex px-12 py-6 justify-center items-center">
+      <div className="max-w-screen-xl w-full flex flex-col sm:flex-row gap-4 justify-between">
+        <div className="flex flex-row justify-between">
+          <div>
+            <Link href="/">
+              <a>
+                <img
+                  src="/gameup_logo.webp"
+                  alt="GameUP logo"
+                  className="w-36"
+                />
+              </a>
+            </Link>
+          </div>
+          <button
+            className="sm:hidden"
+            onClick={() => setShowMenu(!showMenu)}
+            aria-expanded={showMenu}
+            aria-label="Menu mobilne"
+          >
+            <FontAwesomeIcon icon={faBars} size="2x" />
+          </button>
         </div>
-        <button
-          className="sm:hidden"
-          onClick={() => setShowMenu(!showMenu)}
-          aria-expanded={showMenu}
-          aria-label="Menu mobilne"
+        <ul
+          id="desktop-menu"
+          className="hidden sm:flex flex-row list-none gap-4 items-center font-secondary"
         >
-          <FontAwesomeIcon icon={faBars} size="2x" />
-        </button>
+          {navbarLinks.map((link, index) => (
+            <li
+              key={`navbar-${index}`}
+              className="transition-all duration-100 border-lime-500 hover:font-bold hover:border-b-2"
+            >
+              <Link href={link.href} scroll={false}>
+                <a>{link.text}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <ul
+          id="mobile-menu"
+          className={`${
+            showMenu ? "flex" : "hidden"
+          } sm:hidden flex-col list-none gap-4 items-center font-secondary pt-4`}
+        >
+          {navbarLinks.map((link, index) => (
+            <li
+              key={`navbar-mobile-${index}`}
+              className="transition-all duration-100 hover:font-bold"
+              onClick={() => setShowMenu(false)}
+            >
+              <Link href={link.href} scroll={false}>
+                <a className="py-2">{link.text}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul
-        id="desktop-menu"
-        className="hidden sm:flex flex-row list-none gap-4 items-center font-secondary"
-      >
-        {navbarLinks.map((link, index) => (
-          <li
-            key={`navbar-${index}`}
-            className="transition-all duration-100 border-lime-500 hover:font-bold hover:border-b-2"
-          >
-            <Link href={link.href} scroll={false}>
-              <a>{link.text}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <ul
-        id="mobile-menu"
-        className={`${
-          showMenu ? "flex" : "hidden"
-        } sm:hidden flex-col list-none gap-4 items-center font-secondary pt-4`}
-      >
-        {navbarLinks.map((link, index) => (
-          <li
-            key={`navbar-mobile-${index}`}
-            className="transition-all duration-100 hover:font-bold"
-            onClick={() => setShowMenu(false)}
-          >
-            <Link href={link.href} scroll={false}>
-              <a className="py-2">{link.text}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
     </nav>
   );
 };
