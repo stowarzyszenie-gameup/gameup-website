@@ -40,7 +40,7 @@ const Workshops = () => {
             </P>
             <Button
               text="Dowiedz się więcej"
-              href=""
+              href="/workshops"
               classes="mx-auto sm:mx-0"
             />
           </div>

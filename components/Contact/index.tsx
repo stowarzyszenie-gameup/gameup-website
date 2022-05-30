@@ -24,28 +24,27 @@ const Contact = () => {
               pomocą metod wymienionych poniżej. Postaramy się odpowiedzieć
               najszybciej jak tylko będzie to możliwe!
             </P>
-            <P>
-              <ul className="flex flex-col gap-2">
-                <li className="flex items-center">
-                  <div className="w-12 flex justify-center">
-                    <FontAwesomeIcon icon={faAddressCard} size="2x" />
-                  </div>
-                  &nbsp;ul. Komorowska 11/2, 54-436 Wrocław
-                </li>
-                <li className="flex items-center">
-                  <div className="w-12 flex justify-center">
-                    <FontAwesomeIcon icon={faPhoneSquare} size="2x" />
-                  </div>
-                  &nbsp;+48 600 631 820
-                </li>
-                <li className="flex items-center">
-                  <div className="w-12 flex justify-center">
-                    <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                  </div>
-                  &nbsp;stowarzyszeniegameup@gmail.com
-                </li>
-              </ul>
-            </P>
+
+            <ul className="flex flex-col gap-2">
+              <li className="flex items-center">
+                <div className="w-12 flex justify-center">
+                  <FontAwesomeIcon icon={faAddressCard} size="2x" />
+                </div>
+                &nbsp;ul. Komorowska 11/2, 54-436 Wrocław
+              </li>
+              <li className="flex items-center">
+                <div className="w-12 flex justify-center">
+                  <FontAwesomeIcon icon={faPhoneSquare} size="2x" />
+                </div>
+                &nbsp;+48 600 631 820
+              </li>
+              <li className="flex items-center">
+                <div className="w-12 flex justify-center">
+                  <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                </div>
+                &nbsp;stowarzyszeniegameup@gmail.com
+              </li>
+            </ul>
           </div>
           <form
             name="contact"
