@@ -23,8 +23,11 @@ export const handler = async (event: any) => {
     const mail = {
       from: process.env.SENDER_EMAIL,
       to: email,
-      subject: "We have received your message",
-      html,
+      templateId: process.env.SENDGRID_CONTACT_FORM_TEMPLATE_ID,
+      dynamicTemplateData: {
+        name,
+        message,
+      },
     };
     await sendGridMail.send(mail);
     return {
