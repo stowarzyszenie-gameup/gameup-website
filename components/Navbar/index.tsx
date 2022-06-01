@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -67,6 +71,14 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="flex gap-4">
+            <a href="https://www.facebook.com/stowarzyszeniegameup">
+              <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
+            </a>
+            <a href="https://www.linkedin.com/company/stowarzyszenie-game-up/">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+          </li>
         </ul>
         <ul
           id="mobile-menu"
@@ -85,6 +97,14 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="flex gap-8">
+            <a href="https://www.facebook.com/stowarzyszeniegameup">
+              <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
+            </a>
+            <a href="https://www.linkedin.com/company/stowarzyszenie-game-up/">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
