@@ -66,7 +66,7 @@ const Team = () => {
             />
           ))}
         </ul>
-        <div className="grid grid-cols-1 lg:grid-cols-3 w-full h-full rounded overflow-hidden shadow-lg bg-white my-2 px-6 py-4 gap-8">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-3 w-full h-full rounded overflow-hidden shadow-lg bg-white my-2 px-6 py-4 gap-8">
           <img
             src={prawnikPhoto.src}
             alt=""
@@ -87,7 +87,7 @@ const Team = () => {
               wciąż zainstalowanego Medievala II oraz GTA:San Andreas.
             </P>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
