@@ -7,19 +7,17 @@ export const handler = async (event: any) => {
     console.log(`name: ${name}, email: ${email}, message: ${message}`);
 
     sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
-    const html = `
-      <div>
-         Hi ${name}! <br><br>
-         Thanks for getting in touch.
-         We have received your message
-         and one of our customer care
-         representatives will get in
-         touch shortly
-         <br><br>
-         Best <br>
-         John Doe
-      </div>
-    `;
+    const mailInternal = {
+      from: process.env.SENDER_EMAIL,
+      to: email,
+      templateId: process.env.SENDGRID_CONTACT_FORM_INTERNAL_TEMPLATE_ID,
+      dynamicTemplateData: {
+        name,
+        message,
+        email,
+      },
+    };
+    await sendGridMail.send(mailInternal);
     const mail = {
       from: process.env.SENDER_EMAIL,
       to: email,
@@ -32,7 +30,7 @@ export const handler = async (event: any) => {
     await sendGridMail.send(mail);
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Email sent" }),
+      body: JSON.stringify({ message: "Wiadomość wysłana" }),
     };
   } catch (error) {
     return { statusCode: 422, body: String(error) };
