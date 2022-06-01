@@ -9,7 +9,7 @@ export const handler = async (event: any) => {
     sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
     const mailInternal = {
       from: process.env.SENDER_EMAIL,
-      to: email,
+      to: process.env.SENDER_EMAIL,
       templateId: process.env.SENDGRID_CONTACT_FORM_INTERNAL_TEMPLATE_ID,
       dynamicTemplateData: {
         name,

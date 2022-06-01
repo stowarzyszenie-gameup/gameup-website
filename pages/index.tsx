@@ -7,6 +7,7 @@ import Team from "../components/Team";
 import Workshops from "../components/Workshops";
 import facebookShareImg from "../components/assets/images/facebook_share.jpg";
 import gameUpLogo from "../components/assets/images/logo.jpg";
+import Astrolabe from "../components/Astrolabe";
 
 const Home: NextPage = () => {
   return (
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
       <Hero />
       <About />
       <Workshops />
+      <Astrolabe />
       <Team />
       <Contact />
     </div>

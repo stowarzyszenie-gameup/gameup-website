@@ -14,6 +14,10 @@ const navbarLinks = [
     text: "Warsztaty",
   },
   {
+    href: "/#astrolabe",
+    text: "Astrolabe Stories",
+  },
+  {
     href: "/#team",
     text: "Zespół",
   },
