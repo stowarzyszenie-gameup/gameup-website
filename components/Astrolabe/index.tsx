@@ -4,7 +4,7 @@ import { H2, H3 } from "../TextElements/headers";
 import { P } from "../TextElements/paragraph";
 import logo from "./images/logo.png";
 import steam from "./images/steam.webp";
-import game from "./images/last_threshold.webp";
+import game from "./images/poster.jpg";
 
 const Astrolabe = () => {
   return (
