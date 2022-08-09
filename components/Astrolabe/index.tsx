@@ -4,6 +4,7 @@ import { H2, H3 } from "../TextElements/headers";
 import { P } from "../TextElements/paragraph";
 import logo from "./images/logo.png";
 import steam from "./images/steam.webp";
+import nswitch from "./images/switch.webp";
 import game from "./images/poster.jpg";
 
 const Astrolabe = () => {
@@ -27,12 +28,44 @@ const Astrolabe = () => {
               W marcu 2022 premierę miała pierwsza gra stworzona w ramach
               działania projektu - Last Threshold.
             </P>
-            <a
-              href="https://store.steampowered.com/app/1840770/Last_Threshold/"
-              className="mx-auto sm:mx-0"
-            >
-              <img src={steam.src} alt="Available on Steam" className="h-16" />
-            </a>
+            <P>
+              31 maja 2022 Stowarzyszenie zawarło umowę ze spółką Feardemic sp.
+              z.o.o. na wydanie gry Last Threshold na konsole.
+            </P>
+            <P>
+              Więcej informacji o Astrolabe Stories znajdziesz na stronie studia{" "}
+              <a
+                href="https://astrolabestories.com"
+                target="_blank"
+                rel="noreferrer"
+                className="font-extrabold underline"
+              >
+                www.astrolabestories.com
+              </a>
+              .
+            </P>
+            <div className="flex">
+              <a
+                href="https://store.steampowered.com/app/1840770/Last_Threshold/"
+                className="mx-auto sm:mx-0"
+              >
+                <img
+                  src={steam.src}
+                  alt="Available on Steam"
+                  className="h-16"
+                />
+              </a>
+              <a
+                href="https://www.nintendo.com/store/products/last-threshold-switch/"
+                className="mx-auto sm:mx-0"
+              >
+                <img
+                  src={nswitch.src}
+                  alt="Available on Nintendo Switch"
+                  className="h-16"
+                />
+              </a>
+            </div>
 
             {/* <Button
               text="Dowiedz się więcej"

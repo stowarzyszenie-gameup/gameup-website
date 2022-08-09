@@ -1,15 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { H2, H3, H4 } from "../TextElements/headers";
-import { P } from "../TextElements/paragraph";
+import { H2, H3 } from "../TextElements/headers";
 import {
   adamPhoto,
-  kacperPhoto,
   ninaPhoto,
-  rozaPhoto,
+  michalPhoto,
   szymonMakuchPhoto,
   szymonStoczekPhoto,
-  prawnikPhoto,
 } from "./images";
 
 import TeamCard from "./TeamCard";
@@ -36,14 +33,9 @@ const teamMembersData = [
     imgSrc: szymonStoczekPhoto.src,
   },
   {
-    name: "Róza Hnatkowska",
-    role: "UX/UI DESIGNER",
-    imgSrc: rozaPhoto.src,
-  },
-  {
-    name: "Kacper Łach",
-    role: "SOCIAL MEDIA SPECIALIST",
-    imgSrc: kacperPhoto.src,
+    name: "Michał Hawełka",
+    role: "FRONTEND DEVELOPER | IT SUPPORT",
+    imgSrc: michalPhoto.src,
   },
 ];
 

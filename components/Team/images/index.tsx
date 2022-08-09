@@ -3,7 +3,7 @@ import kacperPhoto from "./kacper_lach.webp";
 import szymonStoczekPhoto from "./szymon_stoczek.webp";
 import szymonMakuchPhoto from "./szymon_makuch.webp";
 import ninaPhoto from "./nina_swillo.webp";
-import rozaPhoto from "./roza_hnatkowska.webp";
+import michalPhoto from "./michal_hawelka.webp";
 import prawnikPhoto from "./prawnik.webp";
 
 export {
@@ -12,6 +12,6 @@ export {
   szymonMakuchPhoto,
   szymonStoczekPhoto,
   ninaPhoto,
-  rozaPhoto,
+  michalPhoto,
   prawnikPhoto,
 };
