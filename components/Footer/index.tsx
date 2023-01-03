@@ -8,7 +8,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-600 text-white font-secondary p-4 flex justify-center items-center gap-4">
-      Stowarzyszenie Badania i Rozwoju Gier GameUp 2022
+      Stowarzyszenie Badania i Rozwoju Gier GameUp {new Date().getFullYear()}
       <li className="flex gap-4">
         <a href="https://www.facebook.com/stowarzyszeniegameup">
           <FontAwesomeIcon icon={faFacebookSquare} size="1x" />
